@@ -1,0 +1,33 @@
+.page-logo {
+  color: #fff;
+  padding: 35px 25px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.page-nav {
+  font-family: 'Fjalla One', sans-serif;
+  background: #202628;
+}
+.page-nav__link {
+  color: #fff;
+  padding: 35px 25px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.page-nav__link:hover {
+  background: #e84c3d;
+  color: #fff;
+}
+.page-nav__link:focus {
+  background: #e84c3d;
+  color: #fff;
+}
+.carousel-caption {
+  font-family: 'Fjalla One', sans-serif;
+  text-align: left;
+  font-size: 31px;
+}
+.carousel-caption a {
+  color: #e84c3d;
+  font-size: 15px;
+}
