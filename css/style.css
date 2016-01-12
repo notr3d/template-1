@@ -31,3 +31,120 @@
   color: #e84c3d;
   font-size: 15px;
 }
+.features {
+  background: #e7e7e7;
+}
+.features__item {
+  background: no-repeat 15px 50%;
+  padding: 25px 0 30px 100px;
+}
+.features__item h2 {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+}
+.features__item p {
+  font-size: 14px;
+}
+.features__item a {
+  color: #e84c3d;
+}
+.features__item:nth-child(1) {
+  background-image: url(../img/features/1.png);
+}
+.features__item:nth-child(2) {
+  background-image: url(../img/features/2.png);
+}
+.features__item:nth-child(3) {
+  background-image: url(../img/features/3.png);
+}
+.news__wrapper {
+  padding: 80px 0;
+}
+.news__wrapper h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+.news__wrapper h3 {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 30px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 12px 0;
+}
+.news__item {
+  padding-left: 0;
+}
+.news__item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.news__item p {
+  font-size: 14px;
+  color: #767c7e;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.news__item a {
+  font-size: 14px;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 10px 20px;
+  background: #e84c3d;
+  color: #fff;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.news__pic {
+  height: 450px;
+  background: url(../img/news-bg.jpg) no-repeat center;
+  background-size: contain;
+}
+.red {
+  background: #e84c3d;
+  border-radius: 10px;
+}
+.quote h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 21px;
+  color: #fff;
+}
+.quote blockquote {
+  border: none;
+  color: #fff;
+  padding-left: 0;
+}
+.quote blockquote p {
+  font-size: 18px;
+}
+.quote blockquote footer {
+  font-size: 16px;
+  color: #fff;
+}
+.subscribe h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 21px;
+  color: #fff;
+}
+.subscribe input {
+  width: 200px;
+  height: 45px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+.subscribe button {
+  font-size: 14px;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 10px 20px;
+  background: black;
+  color: #fff;
+  border-radius: 50px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  height: 45px;
+  margin-left: 5px;
+}
