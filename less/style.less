@@ -1,5 +1,8 @@
 @red:#e84c3d;
 
+body {
+  overflow-x: hidden;
+}
 .page-logo {  
   color: #fff;
   padding: 35px 25px;
@@ -40,7 +43,7 @@
 .features {
   background: #e7e7e7;
   &__item {
-    background: no-repeat 15px 50%;
+    background: no-repeat 15px 45px;
     padding: 25px 0 30px 100px;
     h2 {
       font-size: 21px;
@@ -102,12 +105,14 @@
       background: @red;
       color: #fff;
       border-radius: 50px;
-      text-transform: uppercase;      
+      text-transform: uppercase;   
+      margin-bottom: 20px;
+      display: inline-block;
     }
   }
   &__pic {
     height: 450px;
-    background: url(../img/news-bg.jpg) no-repeat center;
+    background: url(../img/news-bg.png) no-repeat center;
     background-size: contain;
   }
 }
@@ -118,6 +123,8 @@
 }
 
 .quote {
+  padding-left: 100px;
+  background: url(../img/user.png) no-repeat 0 50%;
   h2 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 21px;
@@ -125,18 +132,23 @@
   }
   blockquote {
     border: none;
-    color: #fff;
-    padding-left: 0;
+    color: #fff;    
+    padding: 0;
     p {
-      font-size: 18px;
+      font-size: 16px;
+      display: inline;
     }
     footer {
-      font-size: 16px;
+      font-size: 14px;
       color:#fff;
+      display: inline;
     }
   }
 }
 .subscribe {
+  &__container {
+    padding: 0;
+  }
   h2 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 21px;
@@ -148,11 +160,15 @@
     border-radius: 20px;
     outline: none;
     border: none;
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 10px;
   }
   button {
     font-size: 14px;
     font-family: 'Fjalla One', sans-serif;
-    padding: 10px 20px; 
+    //padding: 10px 20px; 
+    width: 100%;
     background: black;
     color: #fff;
     border-radius: 50px;
@@ -161,5 +177,227 @@
     outline: none;
     height: 45px;
     margin-left: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  padding: 20px 0;
+}
+
+.feed {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  &__header {
+    font-size: 21px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 30px;
+  }
+  &__item {
+    padding: 40px 0 30px 100px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: -1px;
+    background: no-repeat 0 45px;
+    flex-grow: 1;
+    &:nth-of-type(1) {
+      background-image: url(../img/feed-1.png);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../img/feed-2.png);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../img/feed-3.png);
+    }
+    
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #888d8f;
+    }
+    a {
+      color: @red;
+    }
+  }
+}
+
+.form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  &__header {    
+    font-size: 21px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 30px;
+  }
+  &__wrapper {
+    background: #e7e7e7;
+    padding:30px;
+    border-radius: 5px;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #767c7e;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 40px;
+      border-radius: 40px;
+      outline: none;
+      border: none;
+      padding-left: 20px;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 10px 20px;
+      outline: none;
+      flex-grow:1;
+    }
+    input[type="button"] {
+      width: 100px;
+      height: 40px;
+      text-transform: uppercase;
+      font-family: 'Fjalla One', sans-serif;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      background: @red;
+      color: #fff;
+    }
+  }
+}
+
+.contacts {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  &__header {    
+    font-size: 21px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 30px;    
+  }
+  address {
+    padding: 30px 0 30px 50px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: -1px;
+    margin-bottom: 0;
+    background: no-repeat 0 35px;
+    flex-grow: 1;
+    strong {
+      color: @red;
+      margin-bottom: 15px;
+    }
+    font-size: 14px;
+    line-height: 24px;
+    &:nth-of-type(1) {
+      background-image: url(../img/address.png);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../img/phone.png);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../img/email.png);
+    }    
+  }
+}
+
+.page-footer {
+  background: #202628;
+  padding: 80px 40px;
+  &__links {
+    
+  }
+  &__nav {
+    margin-bottom: 20px;
+    a {
+      color: #e7e7e7;
+      margin-right: 20px;
+      display: inline-block;
+      position: relative;
+      &:not(:last-of-type) {
+        &::before {
+          content: '/';
+          position: absolute;
+          right: -15px;
+        }
+      }
+      &:hover {
+        color: @red;
+        &::before {
+          color: #e7e7e7;
+        }
+      }
+    }
+  }
+  .copyright {
+    font-size: 14px;
+    color: #595f61;
+    margin-bottom: 10px;
+    a {
+      color: #595f61;
+      margin-right: 20px;
+      display: inline-block;
+      position: relative;
+      &::before {
+        content: '/';
+        position: absolute;
+        right: -15px;
+      }
+      &:hover {
+        color: @red;
+        &::before {
+          color: #e7e7e7;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  &__item {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: no-repeat center;
+    &:nth-of-type(1) {
+      background-image: url(../img/social/fb.png);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../img/social/tw.png);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../img/social/in.png);
+    }
+    
   }
 }
