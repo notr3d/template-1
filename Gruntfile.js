@@ -4,6 +4,7 @@ module.exports = function (grunt) {
     // load all grunt tasks
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-postcss');
     
     grunt.initConfig({
         less: {
@@ -26,7 +27,21 @@ module.exports = function (grunt) {
             tasks: ["less"]
         },
         // "less"-task configuration
+        postcss: {
+          options: {
+            map: true,
+              processors: [
+                require('autoprefixer')({
+                  browsers: ['last 2 versions']
+              })
+          ]
+        },
+          dist: {
+            src: 'css/*.css'
+          }
+        }
     });
      // the default task (running "grunt" in console) is "watch"
      grunt.registerTask('default', ['watch']);
+     grunt.registerTask('default', ['postcss:css']);
 };
